@@ -1,0 +1,6 @@
+{
+    "name": "react.workshop/web",
+    "require": {
+        "react/http": "^1.5"
+    }
+}

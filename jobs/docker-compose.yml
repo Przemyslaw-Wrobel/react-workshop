@@ -1,0 +1,22 @@
+services:
+  app:
+    build: ./app
+    links:
+      - mysql
+      - web
+      - redis
+    volumes:
+      - ./app:/app
+  web:
+    build: ./web
+    volumes:
+      - ./web:/app
+  mysql:
+    image: mysql:5.7.35
+    ports:
+      - 3333:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app
+  redis:
+    image: redis:6.2

@@ -1,0 +1,10 @@
+services:
+  elevators:
+    build: ./
+    command: 'elevators/index.php'
+    volumes:
+      - ./:/app
+  react:
+    build: ./
+    volumes:
+      - ./:/app

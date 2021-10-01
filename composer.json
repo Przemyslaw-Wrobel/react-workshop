@@ -1,0 +1,13 @@
+{
+    "name": "react.workshop/elevators",
+    "require": {
+        "react/event-loop": "^1.2",
+        "react/stream": "^1.2",
+        "react/promise": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elevators\\": "elevators/src"
+        }
+    }
+}
